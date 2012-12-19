@@ -90,7 +90,7 @@ class wikiApi:
     @staticmethod
     def convertToWeeklyViews(views, outFile):
         weeklyViews = {}
-        out = open(outFile.replace('/', '_'), 'w')
+        out = open(outFile, 'w')
         for day in views['daily_views']:
             viewCnt = views['daily_views'][day]
             try:
